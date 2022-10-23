@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firji </title>
+    <link rel="icon" href="icon.jpg">
+    <style>
+        body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: black;
+        }
+        #container {
+            color: #999;
+            font-size: 36px;
+            font-weight: bold;
+            padding-top: 200px;
+            position: fixed;
+            width: 100%;
+            bottom: 45%;
+            display: block;
+        }
+        #flip {
+            height: 50px;
+            overflow: hidden;
+        }
+        #flip > div > div {
+            columns: rgb(0, 0, 0);
+            padding: 4px 12px;
+            height: 45px;
+            margin-bottom: 45px;
+            display: inline-block;
+        }
+        #flip div:first-child {
+            animation: textflip 10s linear
+        infinite;
+        }
+        #flip div:first-child div{
+            background: #ebebeb;
+        }
+        #flip div:last-child div{
+            background: #474747;
+        }
+    @keyframes textflip {
+        0% {
+            margin-top: -45px;
+        }
+        5% {
+            margin-top: -180px;
+        }
+        33% {
+            margin-top: -180px;
+        }
+        38% {
+            margin-top: -90px;
+        }
+        66% {
+            margin-top: -90px;
+        }
+        71% {
+            margin-top: 0px;
+        }
+        99.99% {
+            margin-top: 0px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+        }
+        p {
+            position: fixed;
+            width: 100%;
+            bottom: 30%;
+            font-size: 12px;
+            color: #999;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="foto/evos.png" alt="Logo" width="30" height="30"
+                            class="d-inline-block align-text-top">
+                        Meong Ambon
+                    </a>
+                </div>
+            </nav>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+
+                    <a class="nav-link active" aria-current="page" href="home.html"> <b
+                            class="p-3 border text-bg-danger">Home</b></a>
+                    <a class="nav-link active" aria-current="page" href="firji.html"> <b
+                            class="p-3 border">Hanya TEman</b></a>
+                    <a class="nav-link active" aria-current="page" href="#"> <b
+                            class="p-3 border">2</b></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div id=flip>
+            <div>
+                <div>APA YANG ENGKAU KATAKAN TERSEBUT?</div>
+            </div>
+            <div>
+                <div>KITA HANYALAH SEBATAS TEMAN</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
